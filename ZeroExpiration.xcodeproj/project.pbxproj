@@ -1,0 +1,763 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1445D79128A2D79400879D4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1445D79028A2D79400879D4F /* AppDelegate.swift */; };
+		1445D79528A2D7CB00879D4F /* ScanDocumentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1445D79428A2D7CB00879D4F /* ScanDocumentView.swift */; };
+		14A21A72288C531F00AC9A8B /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A21A71288C531F00AC9A8B /* Settings.swift */; };
+		14A21A74288C778500AC9A8B /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A21A73288C778500AC9A8B /* Profile.swift */; };
+		14A21A77288C82A800AC9A8B /* AWSCognitoAuthPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 14A21A76288C82A800AC9A8B /* AWSCognitoAuthPlugin */; };
+		14A21A79288C82A800AC9A8B /* Amplify in Frameworks */ = {isa = PBXBuildFile; productRef = 14A21A78288C82A800AC9A8B /* Amplify */; };
+		14A21A7B288C851300AC9A8B /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A21A7A288C851300AC9A8B /* SessionManager.swift */; };
+		14A21A82288C85C100AC9A8B /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A21A7D288C85C100AC9A8B /* Session.swift */; };
+		14A21A83288C85C100AC9A8B /* LogIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A21A7E288C85C100AC9A8B /* LogIn.swift */; };
+		14A21A84288C85C100AC9A8B /* Reset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A21A7F288C85C100AC9A8B /* Reset.swift */; };
+		14A21A85288C85C100AC9A8B /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A21A80288C85C100AC9A8B /* SignUp.swift */; };
+		14A21A86288C85C100AC9A8B /* Confirmation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A21A81288C85C100AC9A8B /* Confirmation.swift */; };
+		14DA7B98288AEC8A0096EF87 /* ZeroExpirationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DA7B97288AEC8A0096EF87 /* ZeroExpirationApp.swift */; };
+		14DA7B9A288AEC8A0096EF87 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DA7B99288AEC8A0096EF87 /* ContentView.swift */; };
+		14DA7B9C288AEC900096EF87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14DA7B9B288AEC900096EF87 /* Assets.xcassets */; };
+		14DA7B9F288AEC900096EF87 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14DA7B9E288AEC900096EF87 /* Preview Assets.xcassets */; };
+		14DA7BA9288AEC910096EF87 /* ZeroExpirationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DA7BA8288AEC910096EF87 /* ZeroExpirationTests.swift */; };
+		14DA7BB3288AEC910096EF87 /* ZeroExpirationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DA7BB2288AEC910096EF87 /* ZeroExpirationUITests.swift */; };
+		14DA7BB5288AEC910096EF87 /* ZeroExpirationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DA7BB4288AEC910096EF87 /* ZeroExpirationUITestsLaunchTests.swift */; };
+		14DA7BC5288AEDE90096EF87 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DA7BC4288AEDE90096EF87 /* ModelData.swift */; };
+		14DA7BC7288AEE350096EF87 /* Input.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DA7BC6288AEE350096EF87 /* Input.swift */; };
+		14DA7BC9288AEE620096EF87 /* Expirables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DA7BC8288AEE620096EF87 /* Expirables.swift */; };
+		14DA7BCB288AF0B10096EF87 /* expirables.json in Resources */ = {isa = PBXBuildFile; fileRef = 14DA7BCA288AF0B10096EF87 /* expirables.json */; };
+		14DA7BCF288AF1CB0096EF87 /* Expirable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DA7BCE288AF1CB0096EF87 /* Expirable.swift */; };
+		14DA7BD1288AF2FD0096EF87 /* ExpirableDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DA7BD0288AF2FD0096EF87 /* ExpirableDetail.swift */; };
+		14DA7BD4288AF4430096EF87 /* ExpirableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DA7BD3288AF4430096EF87 /* ExpirableLabel.swift */; };
+		440B9933E68D5F19CAB1D219 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 6640909AF454F88DBF756BB5 /* awsconfiguration.json */; };
+		4C4B8FB2D31A18F1505A0623 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = FFA1FA3B6D3395BB8277306A /* amplifyconfiguration.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		14DA7BA5288AEC910096EF87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14DA7B8C288AEC8A0096EF87 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14DA7B93288AEC8A0096EF87;
+			remoteInfo = ZeroExpiration;
+		};
+		14DA7BAF288AEC910096EF87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14DA7B8C288AEC8A0096EF87 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14DA7B93288AEC8A0096EF87;
+			remoteInfo = ZeroExpiration;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1445D79028A2D79400879D4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1445D79428A2D7CB00879D4F /* ScanDocumentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanDocumentView.swift; sourceTree = "<group>"; };
+		14A21A71288C531F00AC9A8B /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		14A21A73288C778500AC9A8B /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		14A21A7A288C851300AC9A8B /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		14A21A7D288C85C100AC9A8B /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		14A21A7E288C85C100AC9A8B /* LogIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogIn.swift; sourceTree = "<group>"; };
+		14A21A7F288C85C100AC9A8B /* Reset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reset.swift; sourceTree = "<group>"; };
+		14A21A80288C85C100AC9A8B /* SignUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
+		14A21A81288C85C100AC9A8B /* Confirmation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Confirmation.swift; sourceTree = "<group>"; };
+		14A81B11289864E400B82359 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		14DA7B94288AEC8A0096EF87 /* ZeroExpiration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZeroExpiration.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		14DA7B97288AEC8A0096EF87 /* ZeroExpirationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeroExpirationApp.swift; sourceTree = "<group>"; };
+		14DA7B99288AEC8A0096EF87 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		14DA7B9B288AEC900096EF87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		14DA7B9E288AEC900096EF87 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		14DA7BA4288AEC910096EF87 /* ZeroExpirationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZeroExpirationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		14DA7BA8288AEC910096EF87 /* ZeroExpirationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeroExpirationTests.swift; sourceTree = "<group>"; };
+		14DA7BAE288AEC910096EF87 /* ZeroExpirationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZeroExpirationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		14DA7BB2288AEC910096EF87 /* ZeroExpirationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeroExpirationUITests.swift; sourceTree = "<group>"; };
+		14DA7BB4288AEC910096EF87 /* ZeroExpirationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeroExpirationUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		14DA7BC4288AEDE90096EF87 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		14DA7BC6288AEE350096EF87 /* Input.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Input.swift; sourceTree = "<group>"; };
+		14DA7BC8288AEE620096EF87 /* Expirables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expirables.swift; sourceTree = "<group>"; };
+		14DA7BCA288AF0B10096EF87 /* expirables.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = expirables.json; sourceTree = "<group>"; };
+		14DA7BCE288AF1CB0096EF87 /* Expirable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expirable.swift; sourceTree = "<group>"; };
+		14DA7BD0288AF2FD0096EF87 /* ExpirableDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpirableDetail.swift; sourceTree = "<group>"; };
+		14DA7BD3288AF4430096EF87 /* ExpirableLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpirableLabel.swift; sourceTree = "<group>"; };
+		6640909AF454F88DBF756BB5 /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
+		FFA1FA3B6D3395BB8277306A /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = amplifyconfiguration.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		14DA7B91288AEC8A0096EF87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14A21A77288C82A800AC9A8B /* AWSCognitoAuthPlugin in Frameworks */,
+				14A21A79288C82A800AC9A8B /* Amplify in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14DA7BA1288AEC910096EF87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14DA7BAB288AEC910096EF87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14A21A7C288C85C100AC9A8B /* AWS Auth */ = {
+			isa = PBXGroup;
+			children = (
+				14A21A7D288C85C100AC9A8B /* Session.swift */,
+				14A21A7E288C85C100AC9A8B /* LogIn.swift */,
+				14A21A7F288C85C100AC9A8B /* Reset.swift */,
+				14A21A80288C85C100AC9A8B /* SignUp.swift */,
+				14A21A81288C85C100AC9A8B /* Confirmation.swift */,
+			);
+			path = "AWS Auth";
+			sourceTree = "<group>";
+		};
+		14A81B132898653E00B82359 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				1445D79428A2D7CB00879D4F /* ScanDocumentView.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		14DA7B8B288AEC8A0096EF87 = {
+			isa = PBXGroup;
+			children = (
+				14DA7B96288AEC8A0096EF87 /* ZeroExpiration */,
+				14DA7BA7288AEC910096EF87 /* ZeroExpirationTests */,
+				14DA7BB1288AEC910096EF87 /* ZeroExpirationUITests */,
+				14DA7B95288AEC8A0096EF87 /* Products */,
+				A3163A8BED4CC17DE7B8D92B /* AmplifyConfig */,
+			);
+			sourceTree = "<group>";
+		};
+		14DA7B95288AEC8A0096EF87 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				14DA7B94288AEC8A0096EF87 /* ZeroExpiration.app */,
+				14DA7BA4288AEC910096EF87 /* ZeroExpirationTests.xctest */,
+				14DA7BAE288AEC910096EF87 /* ZeroExpirationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		14DA7B96288AEC8A0096EF87 /* ZeroExpiration */ = {
+			isa = PBXGroup;
+			children = (
+				14A81B11289864E400B82359 /* Info.plist */,
+				14DA7BC1288AED5F0096EF87 /* Model */,
+				14DA7BC2288AED690096EF87 /* Resources */,
+				14DA7BC3288AED870096EF87 /* Views */,
+				14DA7B97288AEC8A0096EF87 /* ZeroExpirationApp.swift */,
+				1445D79028A2D79400879D4F /* AppDelegate.swift */,
+				14DA7B9B288AEC900096EF87 /* Assets.xcassets */,
+				14DA7B9D288AEC900096EF87 /* Preview Content */,
+			);
+			path = ZeroExpiration;
+			sourceTree = "<group>";
+		};
+		14DA7B9D288AEC900096EF87 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				14DA7B9E288AEC900096EF87 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		14DA7BA7288AEC910096EF87 /* ZeroExpirationTests */ = {
+			isa = PBXGroup;
+			children = (
+				14DA7BA8288AEC910096EF87 /* ZeroExpirationTests.swift */,
+			);
+			path = ZeroExpirationTests;
+			sourceTree = "<group>";
+		};
+		14DA7BB1288AEC910096EF87 /* ZeroExpirationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				14DA7BB2288AEC910096EF87 /* ZeroExpirationUITests.swift */,
+				14DA7BB4288AEC910096EF87 /* ZeroExpirationUITestsLaunchTests.swift */,
+			);
+			path = ZeroExpirationUITests;
+			sourceTree = "<group>";
+		};
+		14DA7BC1288AED5F0096EF87 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				14DA7BC4288AEDE90096EF87 /* ModelData.swift */,
+				14DA7BCE288AF1CB0096EF87 /* Expirable.swift */,
+				14A21A73288C778500AC9A8B /* Profile.swift */,
+				14A21A7A288C851300AC9A8B /* SessionManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		14DA7BC2288AED690096EF87 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				14DA7BCA288AF0B10096EF87 /* expirables.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		14DA7BC3288AED870096EF87 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				14A21A7C288C85C100AC9A8B /* AWS Auth */,
+				14DA7BD2288AF37D0096EF87 /* Expirables */,
+				14A81B132898653E00B82359 /* Helpers */,
+				14A21A71288C531F00AC9A8B /* Settings.swift */,
+				14DA7BC6288AEE350096EF87 /* Input.swift */,
+				14DA7B99288AEC8A0096EF87 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		14DA7BD2288AF37D0096EF87 /* Expirables */ = {
+			isa = PBXGroup;
+			children = (
+				14DA7BC8288AEE620096EF87 /* Expirables.swift */,
+				14DA7BD0288AF2FD0096EF87 /* ExpirableDetail.swift */,
+				14DA7BD3288AF4430096EF87 /* ExpirableLabel.swift */,
+			);
+			path = Expirables;
+			sourceTree = "<group>";
+		};
+		A3163A8BED4CC17DE7B8D92B /* AmplifyConfig */ = {
+			isa = PBXGroup;
+			children = (
+				6640909AF454F88DBF756BB5 /* awsconfiguration.json */,
+				FFA1FA3B6D3395BB8277306A /* amplifyconfiguration.json */,
+			);
+			name = AmplifyConfig;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		14DA7B93288AEC8A0096EF87 /* ZeroExpiration */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14DA7BB8288AEC910096EF87 /* Build configuration list for PBXNativeTarget "ZeroExpiration" */;
+			buildPhases = (
+				14DA7B90288AEC8A0096EF87 /* Sources */,
+				14DA7B91288AEC8A0096EF87 /* Frameworks */,
+				14DA7B92288AEC8A0096EF87 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZeroExpiration;
+			packageProductDependencies = (
+				14A21A76288C82A800AC9A8B /* AWSCognitoAuthPlugin */,
+				14A21A78288C82A800AC9A8B /* Amplify */,
+			);
+			productName = ZeroExpiration;
+			productReference = 14DA7B94288AEC8A0096EF87 /* ZeroExpiration.app */;
+			productType = "com.apple.product-type.application";
+		};
+		14DA7BA3288AEC910096EF87 /* ZeroExpirationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14DA7BBB288AEC910096EF87 /* Build configuration list for PBXNativeTarget "ZeroExpirationTests" */;
+			buildPhases = (
+				14DA7BA0288AEC910096EF87 /* Sources */,
+				14DA7BA1288AEC910096EF87 /* Frameworks */,
+				14DA7BA2288AEC910096EF87 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				14DA7BA6288AEC910096EF87 /* PBXTargetDependency */,
+			);
+			name = ZeroExpirationTests;
+			productName = ZeroExpirationTests;
+			productReference = 14DA7BA4288AEC910096EF87 /* ZeroExpirationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		14DA7BAD288AEC910096EF87 /* ZeroExpirationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14DA7BBE288AEC910096EF87 /* Build configuration list for PBXNativeTarget "ZeroExpirationUITests" */;
+			buildPhases = (
+				14DA7BAA288AEC910096EF87 /* Sources */,
+				14DA7BAB288AEC910096EF87 /* Frameworks */,
+				14DA7BAC288AEC910096EF87 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				14DA7BB0288AEC910096EF87 /* PBXTargetDependency */,
+			);
+			name = ZeroExpirationUITests;
+			productName = ZeroExpirationUITests;
+			productReference = 14DA7BAE288AEC910096EF87 /* ZeroExpirationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		14DA7B8C288AEC8A0096EF87 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					14DA7B93288AEC8A0096EF87 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					14DA7BA3288AEC910096EF87 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 14DA7B93288AEC8A0096EF87;
+					};
+					14DA7BAD288AEC910096EF87 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 14DA7B93288AEC8A0096EF87;
+					};
+				};
+			};
+			buildConfigurationList = 14DA7B8F288AEC8A0096EF87 /* Build configuration list for PBXProject "ZeroExpiration" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 14DA7B8B288AEC8A0096EF87;
+			packageReferences = (
+				14A21A75288C82A800AC9A8B /* XCRemoteSwiftPackageReference "amplify-ios" */,
+			);
+			productRefGroup = 14DA7B95288AEC8A0096EF87 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				14DA7B93288AEC8A0096EF87 /* ZeroExpiration */,
+				14DA7BA3288AEC910096EF87 /* ZeroExpirationTests */,
+				14DA7BAD288AEC910096EF87 /* ZeroExpirationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		14DA7B92288AEC8A0096EF87 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14DA7B9F288AEC900096EF87 /* Preview Assets.xcassets in Resources */,
+				14DA7BCB288AF0B10096EF87 /* expirables.json in Resources */,
+				14DA7B9C288AEC900096EF87 /* Assets.xcassets in Resources */,
+				440B9933E68D5F19CAB1D219 /* awsconfiguration.json in Resources */,
+				4C4B8FB2D31A18F1505A0623 /* amplifyconfiguration.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14DA7BA2288AEC910096EF87 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14DA7BAC288AEC910096EF87 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		14DA7B90288AEC8A0096EF87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14DA7BCF288AF1CB0096EF87 /* Expirable.swift in Sources */,
+				14A21A74288C778500AC9A8B /* Profile.swift in Sources */,
+				14DA7B9A288AEC8A0096EF87 /* ContentView.swift in Sources */,
+				14DA7BC9288AEE620096EF87 /* Expirables.swift in Sources */,
+				14A21A85288C85C100AC9A8B /* SignUp.swift in Sources */,
+				14DA7BD4288AF4430096EF87 /* ExpirableLabel.swift in Sources */,
+				14A21A86288C85C100AC9A8B /* Confirmation.swift in Sources */,
+				14DA7B98288AEC8A0096EF87 /* ZeroExpirationApp.swift in Sources */,
+				14DA7BC7288AEE350096EF87 /* Input.swift in Sources */,
+				14A21A84288C85C100AC9A8B /* Reset.swift in Sources */,
+				14A21A72288C531F00AC9A8B /* Settings.swift in Sources */,
+				14A21A82288C85C100AC9A8B /* Session.swift in Sources */,
+				14DA7BC5288AEDE90096EF87 /* ModelData.swift in Sources */,
+				14DA7BD1288AF2FD0096EF87 /* ExpirableDetail.swift in Sources */,
+				14A21A7B288C851300AC9A8B /* SessionManager.swift in Sources */,
+				1445D79128A2D79400879D4F /* AppDelegate.swift in Sources */,
+				1445D79528A2D7CB00879D4F /* ScanDocumentView.swift in Sources */,
+				14A21A83288C85C100AC9A8B /* LogIn.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14DA7BA0288AEC910096EF87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14DA7BA9288AEC910096EF87 /* ZeroExpirationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14DA7BAA288AEC910096EF87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14DA7BB3288AEC910096EF87 /* ZeroExpirationUITests.swift in Sources */,
+				14DA7BB5288AEC910096EF87 /* ZeroExpirationUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		14DA7BA6288AEC910096EF87 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 14DA7B93288AEC8A0096EF87 /* ZeroExpiration */;
+			targetProxy = 14DA7BA5288AEC910096EF87 /* PBXContainerItemProxy */;
+		};
+		14DA7BB0288AEC910096EF87 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 14DA7B93288AEC8A0096EF87 /* ZeroExpiration */;
+			targetProxy = 14DA7BAF288AEC910096EF87 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		14DA7BB6288AEC910096EF87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		14DA7BB7288AEC910096EF87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		14DA7BB9288AEC910096EF87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_ASSET_PATHS = "\"ZeroExpiration/Preview Content\"";
+				DEVELOPMENT_TEAM = FYNP7NNG5M;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ZeroExpiration/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We Require Camera Permission To Scan Expiration Dates For New Expirables";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ZeroExpiration.ZeroExpiration;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		14DA7BBA288AEC910096EF87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_ASSET_PATHS = "\"ZeroExpiration/Preview Content\"";
+				DEVELOPMENT_TEAM = FYNP7NNG5M;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ZeroExpiration/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We Require Camera Permission To Scan Expiration Dates For New Expirables";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ZeroExpiration.ZeroExpiration;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		14DA7BBC288AEC910096EF87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FYNP7NNG5M;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.JFReminders.ZeroExpirationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZeroExpiration.app/ZeroExpiration";
+			};
+			name = Debug;
+		};
+		14DA7BBD288AEC910096EF87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FYNP7NNG5M;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.JFReminders.ZeroExpirationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZeroExpiration.app/ZeroExpiration";
+			};
+			name = Release;
+		};
+		14DA7BBF288AEC910096EF87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FYNP7NNG5M;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.JFReminders.ZeroExpirationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZeroExpiration;
+			};
+			name = Debug;
+		};
+		14DA7BC0288AEC910096EF87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FYNP7NNG5M;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.JFReminders.ZeroExpirationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZeroExpiration;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		14DA7B8F288AEC8A0096EF87 /* Build configuration list for PBXProject "ZeroExpiration" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14DA7BB6288AEC910096EF87 /* Debug */,
+				14DA7BB7288AEC910096EF87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14DA7BB8288AEC910096EF87 /* Build configuration list for PBXNativeTarget "ZeroExpiration" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14DA7BB9288AEC910096EF87 /* Debug */,
+				14DA7BBA288AEC910096EF87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14DA7BBB288AEC910096EF87 /* Build configuration list for PBXNativeTarget "ZeroExpirationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14DA7BBC288AEC910096EF87 /* Debug */,
+				14DA7BBD288AEC910096EF87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14DA7BBE288AEC910096EF87 /* Build configuration list for PBXNativeTarget "ZeroExpirationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14DA7BBF288AEC910096EF87 /* Debug */,
+				14DA7BC0288AEC910096EF87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		14A21A75288C82A800AC9A8B /* XCRemoteSwiftPackageReference "amplify-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aws-amplify/amplify-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		14A21A76288C82A800AC9A8B /* AWSCognitoAuthPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 14A21A75288C82A800AC9A8B /* XCRemoteSwiftPackageReference "amplify-ios" */;
+			productName = AWSCognitoAuthPlugin;
+		};
+		14A21A78288C82A800AC9A8B /* Amplify */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 14A21A75288C82A800AC9A8B /* XCRemoteSwiftPackageReference "amplify-ios" */;
+			productName = Amplify;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 14DA7B8C288AEC8A0096EF87 /* Project object */;
+}

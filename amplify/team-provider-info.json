@@ -1,0 +1,30 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-zeroexpiration-dev-144230-authRole",
+      "UnauthRoleArn": "arn:aws:iam::417990662395:role/amplify-zeroexpiration-dev-144230-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::417990662395:role/amplify-zeroexpiration-dev-144230-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-zeroexpiration-dev-144230-deployment",
+      "UnauthRoleName": "amplify-zeroexpiration-dev-144230-unauthRole",
+      "StackName": "amplify-zeroexpiration-dev-144230",
+      "StackId": "arn:aws:cloudformation:us-east-1:417990662395:stack/amplify-zeroexpiration-dev-144230/36263540-0ab7-11ed-a0a3-0ebf32735591",
+      "AmplifyAppId": "d23z0tts5c0pia"
+    },
+    "categories": {
+      "function": {
+        "zeroExpiration": {
+          "deploymentBucketName": "amplify-zeroexpiration-dev-144230-deployment",
+          "s3Key": "amplify-builds/zeroExpiration-464d787142772f497a65-build.zip"
+        },
+        "notify": {
+          "deploymentBucketName": "amplify-zeroexpiration-dev-144230-deployment",
+          "s3Key": "amplify-builds/notify-566a53754b732f2b6d66-build.zip"
+        }
+      },
+      "auth": {
+        "zeroexpiration4f8651f8": {}
+      }
+    }
+  }
+}

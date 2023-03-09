@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "paths": {
+    "/userData": {
+      "name": "/userData",
+      "lambdaFunction": "zeroExpiration",
+      "permissions": {
+        "setting": "open"
+      }
+    },
+    "/notify": {
+      "name": "/notify",
+      "lambdaFunction": "notify",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

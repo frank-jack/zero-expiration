@@ -1,0 +1,10 @@
+{
+  "resourceName": "ZeroExpirationStorage",
+  "tableName": "ZeroExpirationStorage",
+  "partitionKey": {
+    "fieldName": "userId",
+    "fieldType": "string"
+  },
+  "gsi": [],
+  "triggerFunctions": []
+}

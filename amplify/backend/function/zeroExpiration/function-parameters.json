@@ -1,0 +1,13 @@
+{
+  "lambdaLayers": [],
+  "permissions": {
+    "storage": {
+      "ZeroExpirationStorage": [
+        "create",
+        "read",
+        "update",
+        "delete"
+      ]
+    }
+  }
+}

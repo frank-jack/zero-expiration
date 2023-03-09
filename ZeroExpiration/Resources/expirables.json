@@ -1,0 +1,18 @@
+NOT USED
+[
+    {
+        "name": "Medicine1",
+        "expDate": "2001-01-01",
+        "id": 0
+    },
+    {
+        "name": "Medicine2",
+        "expDate": "2002-02-02",
+        "id": 1
+    },
+    {
+        "name": "Medicine3",
+        "expDate": "1990-02-02",
+        "id": 2
+    }
+]
